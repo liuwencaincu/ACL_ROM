@@ -123,7 +123,7 @@ st.write('# ')
 #######
 expander = st.expander("See Result Explanation by Individual Features Contribution")
 
-explainer = ClassifierExplainer(model, input_df,X_background=X,shap='tree')
+explainer = ClassifierExplainer(model, input_df,X_background=X)
 #st.write(X_expand)
 #st.write(len(X))
 expander.write(explainer.plot_contributions(index=0,#len(X)
