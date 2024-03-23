@@ -84,7 +84,7 @@ y = dataset['ROM_12W']
 # y = y[0:101]
 #X_summary = shap.kmeans(X,10)
 
-X_expand = X.append(input_df, ignore_index = True)
+X_expand = pd.concat([X,input_df], ignore_index = True)
 y_expand = np.hstack([y,model.predict(input_df)])
 
 from explainerdashboard import ClassifierExplainer
