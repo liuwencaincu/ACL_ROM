@@ -1,6 +1,6 @@
 numpy==1.23.5
 pandas==1.5.3
 pycaret[full]
-streamlit
+streamlit==1.25.0
 shap==0.42.1
 explainerdashboard==0.4.3
